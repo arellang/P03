@@ -95,7 +95,7 @@ code {
 
 
 /* Styling for the navigation button and submit button */
-div.button-view-pg a, div.button-bk-to-top a{
+div.button-view-pg a{
   font-family: "Karla", Arial, sans-serif;
   position: relative;
   display: inline-block;
@@ -110,7 +110,20 @@ div.button-view-pg a, div.button-bk-to-top a{
   color: black;
   border: solid 1.2px black;
 }
-div.button-bk-to-top {
+div.button-bk-to-top a {
+  font-family: "Karla", Arial, sans-serif;
+  position: relative;
+  display: inline-block;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  text-decoration: none;
+  background-color: none;
+  padding: 0.3em 0.8em 0.3em 0.8em;
+  color: black;
+  border-bottom: solid 1.2px black;
   /* margin: 3em 0 3em 0;
   left: 0;
   -webkit-transform: rotate(-90deg);
@@ -134,9 +147,11 @@ div.button-bk-to-top {
   font-weight: 500;
   text-decoration: none;
   transition-duration: 0.3s;
-  border: solid 1.2px darkgrey;
-  background-color: darkgrey;
+  border: solid 1.2px #ffd500;
+  background-color: #ffd500;
   color: white;
+  transition: 0.5s;
+  transform: translateX(12px);
 }
 
 /*
@@ -320,7 +335,7 @@ p {
 footer {
   text-align: center;
   color: black;
-  margin-bottom: 2em;
+  margin-bottom:10px;
 }
 
 @media screen and (max-width: 992px) {
