@@ -47,6 +47,7 @@ code {
   flex-wrap: wrap;
   flex-direction: row;
   align-items: flex-start;
+  width: 100%;
 }
 
 .block-3-5 {
@@ -56,9 +57,20 @@ code {
 
 .block-2-5 {
   padding-top: 1em;
+  flex-basis: 40%;
+  margin: 0;
+}
+
+.block-4-5 {
+  flex-basis: 70%;
+  margin: 0;
+}
+
+.block-1-5 {
   flex-basis: 30%;
   margin: 0;
 }
+
 
 /*
   VISUAL ELEMENTS -------------------
@@ -111,9 +123,11 @@ div.button-bk-to-top {
   text-decoration: none;
   font-weight: 500;
   transition-duration: 0.3s;
-  border: solid 1.2px #ffd500;
-  background-color: #ffd500;
+  border: solid 1.2px black;
+  background-color: black;
   color: white;
+  transition: 0.5s;
+  transform: translateX(12px);
 }
 
 .button-bk-to-top a:hover {
@@ -183,7 +197,7 @@ p {
   margin-top: 0;
   margin-bottom: 1.5em;
   line-height: 2em;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 400;
   width: 100%;
 }
@@ -219,8 +233,8 @@ p {
 
 .nav a:hover, .dropdown-content a:hover {
   text-decoration: none;
-  transition-duration: 0.3s;
-  transform: translateX(-5px);
+  transition-duration: 0.5s;
+  transform: translateX(-8px);
   color: black;
 }
 
