@@ -83,7 +83,7 @@ code {
 
 
 /* Styling for the navigation button and submit button */
-div.button-view-pg, div.button-bk-to-top {
+div.button-view-pg a, div.button-bk-to-top a{
   font-family: "Karla", Arial, sans-serif;
   position: relative;
   display: inline-block;
@@ -107,7 +107,7 @@ div.button-bk-to-top {
   -o-transform: rotate(-90deg); */
 }
 
-.button-view-pg:hover {
+.button-view-pg a:hover {
   text-decoration: none;
   font-weight: 500;
   transition-duration: 0.3s;
@@ -116,7 +116,7 @@ div.button-bk-to-top {
   color: white;
 }
 
-.button-bk-to-top:hover {
+.button-bk-to-top a:hover {
   font-weight: 500;
   text-decoration: none;
   transition-duration: 0.3s;
