@@ -275,14 +275,22 @@ p {
   z-index: 1;
 }
 
-.nav a, .dropdown-content a {
+.nav a {
   display: block;
   font-family: "Karla", Arial, sans-serif;
-  font-weight: 400;
   font-size: 0.9rem;
   text-decoration: none;
   text-transform: uppercase;
   padding: 0em 1.5em 0em 1.3em;
+  font-weight: 100;
+  color: rgb(100, 100, 100);
+}
+
+.dropdown-content a {
+  font-family: "Karla", Arial, sans-serif;
+  font-size: 0.9rem;
+  text-decoration: none;
+  text-transform: uppercase;
   font-weight: 100;
   color: rgb(100, 100, 100);
 }
@@ -323,15 +331,21 @@ p {
   width: 100%;
 }
 
-.dropdown-content a {
+/* .dropdown-content a { */
+.dropdown-item {
   display: block;
   text-align: left;
-  padding: 2% 70% 2% 5%;
+  width: 100%;
+  /* padding: 2% 70% 2% 5%; */
   line-height: 2.5em;
   color: lightgrey;
 }
 
-.dropdown-content a:hover {
+.dropdown-item:hover {
+
+/* }
+
+.dropdown-content a:hover { */
   text-decoration: none;
   color: white;
   background-color: grey;
