@@ -31,6 +31,23 @@ section {
   margin-left: 3%;
 }
 
+#mail-link {
+  color: black;
+  text-decoration: none;
+}
+#mail-link:hover {
+  color: white;
+  background-color: #ffd500;
+  padding: 0.5em 0.6em;
+}
+
+#in-text-link {
+  color: black;
+  text-decoration: underline;
+}
+#in-text-link:hover {
+  text-decoration: none;
+}
 
 /* #absolute-title {
   position: absolute;
@@ -59,17 +76,16 @@ section {
 
 
 .projects-nav {
-  padding-bottom: 10em;
+  padding-bottom: 30em;
   background-color: darkgrey;
-
 }
 
-.bg-grey {
+/* .bg-grey {
   position: relative;
   padding: 0.5em 5em 0.5em 0.5em;
   display: inline-block;
   background-color: #ffd500;
-}
+} */
 
 code {
   padding: 0.3em;
@@ -172,6 +188,10 @@ div.button a {
   /* transform: translateX(12px); */
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
 /*
   TEXT ELEMENTS -------------------
 */
@@ -180,6 +200,7 @@ h1 {
   font-size: 1.2rem;
   font-weight: bold;
   color: black;
+  padding-left: 0.5em;
   letter-spacing: 0.1em;
 } /*used for header*/
 
@@ -266,7 +287,7 @@ p {
   color: rgb(100, 100, 100);
 }
 
-.nav a:hover, .dropdown-content a:hover {
+.nav a:hover {
   text-decoration: none;
   transition-duration: 0.5s;
   transform: translateX(-8px);
@@ -297,21 +318,23 @@ p {
   display: none;
   background-color: black;
   position: relative;
-  padding: 1.5em 0em;
+  padding: 1.2em 0em;
   margin-left: 0;
   width: 100%;
 }
 
 .dropdown-content a {
   display: block;
-  padding-top: 2% 100% 2% 5%;
+  text-align: left;
+  padding: 2% 70% 2% 5%;
   line-height: 2.5em;
   color: lightgrey;
 }
 
 .dropdown-content a:hover {
-  background-color: grey;
+  text-decoration: none;
   color: white;
+  background-color: grey;
 }
 
 .dropdown:hover .dropdown-content {display: block;}
@@ -352,7 +375,7 @@ footer {
   text-align: center;
   color: black;
   margin-bottom:1em;
-  padding-top: 4em;
+  padding-top: 2em;
 }
 
 
@@ -417,7 +440,7 @@ footer {
   }
 
   header {
-    padding: 0.5em;
+    padding: 0em;
     margin: 0;
   }
 
