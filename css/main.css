@@ -6,9 +6,7 @@ html {
 }
 
 header {
-  /* margin: 2% 8% 5% 8%; */
-  margin: 0;
-  padding: 1em 7em;
+  margin-bottom: 3.5em;
 }
 
 body {
@@ -22,13 +20,8 @@ body {
   color: black;
 }
 
-section {
-  margin: 3% 10% 3% 10%;
-}
-
-.element {
-  position: relative;
-  margin-left: 3%;
+ section {
+  margin: 2% 0;
 }
 
 #mail-link {
@@ -49,50 +42,18 @@ section {
   text-decoration: none;
 }
 
-/* #absolute-title {
-  position: absolute;
-  writing-mode: vertical-rl;
-  top: -5em;
-  left: -10em;
-}
-#absolute-title2 {
-  position: absolute;
-  right:0;
-  top: 35%;
-  writing-mode: vertical-rl;
-  text-orientation: upright;
-}
-#absolute-info {
-  position: relative;
-  width: 30%;
-  padding-top: 22em; padding-bottom: 1em;
-  margin-left: 5em;
-  top: 8em;
-  line-height: 1.5em;
-  border-left: solid 1px #ffd500;
-  padding-left: 1.8em;
-  margin-bottom: 8em;
-} */
-
 
 .projects-nav {
   padding-bottom: 30em;
   background-color: darkgrey;
 }
 
-/* .bg-grey {
-  position: relative;
-  padding: 0.5em 5em 0.5em 0.5em;
-  display: inline-block;
-  background-color: #ffd500;
-} */
-
 code {
   padding: 0.3em;
   display: inline-block;
 }
 
-.container-1 {
+/* .container-1 {
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -120,7 +81,7 @@ code {
 .block-4-5 {
   flex-basis: 70%;
   margin: 0;
-}
+} */
 
 
 /* Styling for the navigation button and submit button */
@@ -135,10 +96,11 @@ div.button-view-pg a{
   letter-spacing: 0.3em;
   text-decoration: none;
   background-color: none;
-  padding: 0.2em 0.8em;
+  padding: 5px 8px;
   color: black;
   border: solid 1.2px black;
 }
+
 div.button a {
   font-family: "Karla", Arial, sans-serif;
   display: inline-block;
@@ -164,7 +126,6 @@ div.button a {
   -ms-transform: rotate(-90deg);
   -o-transform: rotate(-90deg);
 }
-
 
 .button-view-pg a:hover {
   text-decoration: none;
@@ -197,10 +158,11 @@ a {
 */
 h1 {
   font-family: "Karla", Arial, sans-serif;
-  font-size: 1.2rem;
+  font-size: 0.8rem;
   font-weight: bold;
   color: black;
   padding-left: 0.5em;
+  margin-top: 16px;
   letter-spacing: 0.1em;
 } /*used for header*/
 
@@ -209,19 +171,21 @@ h2 {
   text-transform: uppercase;
   font-family: "Karla", Arial, sans-serif;
   font-size: 0.8rem;
-  letter-spacing: 0.3em;
-  margin-bottom: 1em;
-  color: #bfbfbf;
+  letter-spacing: 0.5em;
+  margin-bottom: 5em;
+  color: black;
   font-weight: 400;
 }
 
 h3 {
   font-family: "Karla", Arial, sans-serif;
-  font-weight: 800;
-  font-size: 1.5rem;
-  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.8rem;
+  /* color: black; */
+  color: rgb(120, 120, 120);
   margin-top: 0;
-  margin-bottom: 0.4em;
+  margin-bottom: 0.2em;
 }
 
 h4 {
@@ -247,17 +211,6 @@ h6 {
   margin-bottom: 0;
 }
 
-h7 {
-  font-family: "Karla", Arial, sans-serif;
-  font-weight: 600;
-  font-size: 4rem;
-  line-height: 1em;
-  text-transform: uppercase;
-  color: lightgrey;
-  writing-mode: vertical-rl;
-  text-orientation: upleft;
-}
-
 p {
   margin-top: 0;
   margin-bottom: 1.5em;
@@ -268,235 +221,195 @@ p {
 }
 
 /* Styling Main navigation */
-.nav {
-  position: absolute;
-  right: 8em;
-  border-right: solid 1px black;
-  z-index: 1;
+.nametag {
+  margin-left: 8%;
 }
 
-.nav a {
-  display: block;
-  font-family: "Karla", Arial, sans-serif;
-  font-size: 0.9rem;
-  text-decoration: none;
-  text-transform: uppercase;
-  padding: 0em 1.5em 0em 1.3em;
-  font-weight: 100;
+.nametag a:hover {
   color: rgb(100, 100, 100);
-}
-
-.dropdown-content a {
-  font-family: "Karla", Arial, sans-serif;
-  font-size: 0.9rem;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 100;
-  color: rgb(100, 100, 100);
-}
-
-.nav a:hover {
-  text-decoration: none;
   transition-duration: 0.5s;
-  transform: translateX(-8px);
-  color: white;
-  background-color: rgb(50, 50, 50);
 }
+
+.horizontal-bar a {
+  font-family: "Karla", Arial, sans-serif;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: black;
+}
+
+.nav-right a{
+  font-family: "Karla", Arial, sans-serif;
+  font-size: 0.8rem;
+  margin: 0em 0.6em;
+  font-weight: 100;
+  color: rgb(30, 30, 30);
+  border-bottom: solid lightgrey 2px;
+}
+
+.nav-right a:hover {
+  border-bottom: none;
+  transition-duration: 0.5s;
+  color: black;
+}
+
+.nav-right {
+  position: fixed;
+  right: 8%;
+  margin-top: 0;
+  z-index: 1000;
+}
+/* #abt-button a{
+  right: 8%;
+}
+#proj-button a{
+  right: 12%;
+}
+#home-button a{
+  right: 18%;
+} */
+
+
 
 /* Styling for the navigation bar in responsive webpages*/
-.menu-button {
-  width: 35px;
-  height: 5px;
-  background-color: black;
-  margin: 6px 0;
-  outline: none;
-}
 
-.dropdown {
-  display: none;
-  position: relative;
-  top:0; right:0;
-  width: 100%;
-  margin: 0 0 1em 0;
-  border: none;
-  right: 0;
-}
 
-.dropdown-content {
-  display: none;
-  background-color: black;
-  position: relative;
-  padding: 1.2em 0em;
-  margin-left: 0;
-  width: 100%;
-}
-
-/* .dropdown-content a { */
-.dropdown-item {
-  display: block;
-  text-align: left;
-  width: 100%;
-  /* padding: 2% 70% 2% 5%; */
-  line-height: 2.5em;
-  color: lightgrey;
-}
-
-.dropdown-item:hover {
-
-/* }
-
-.dropdown-content a:hover { */
-  text-decoration: none;
-  color: white;
-  background-color: grey;
-}
-
-.dropdown:hover .dropdown-content {display: block;}
 
 /* Styling projects display panel*/
 * {
 	box-sizing: border-box;
 }
-.container-2 {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 100%;
-}
 
-.block-panel {
+.container {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   flex-direction: row;
-  align-items: flex-start;
-  width: 100%;
-  margin: 0;
-  padding-top: 2em;
-  padding-bottom: 2em;
 }
 
-.block-panel img{
-  object-fit: cover;
-  width: 450px; height: auto;
+.block {
+	flex-basis: 35%;
 }
-.block-panel img:hover{
-  transition: 0.3s;
+.block-right {
+  /* position: absolute; */
+  margin-left: -3%;
+	flex-basis: 65%;
+  z-index: 1;
 }
+
+.big-text {
+  display: block;
+}
+
+.big-text a{
+  font-size: 16vw;
+  color: rgb(240, 240, 240);
+  letter-spacing: 0.2em;
+  font-weight: bold;
+}
+
 
 footer {
+  font-size: 0.8rem;
   text-align: center;
   color: black;
-  margin-bottom:1em;
+  margin-bottom:0em;
   padding-top: 2em;
 }
 
 
 /* Media Queries */
+/* @media screen and (max-width: 1300px) {
+  .big-text a{
+    font-size: 12em;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .big-text a{
+    font-size: 10em;
+  }
+} */
+
+
 @media screen and (max-width: 992px) {
   body {
     line-height: normal;
-
   }
 
-  header {
-    padding: 1em 3em;
-  }
-	.nav a, .dropdown-content a {
-    padding-bottom: 0.5em;
-  }
-  .nav {
-    right: 3em;
-  }
-
-  .block-1-5, .block-2-5, .block-3-5, .block-4-5 {
-    flex-basis: 85%;
+  .horizontal-bar {
+    position: fixed;
+    background-color: rgb(250, 250, 250);
+    top: 0;
+    width: 100%;
+    height: 50px;
+    width: 100%;
+    z-index: 9999;
   }
 
-  section {
-    margin: 3% 10%;
+  h2 {
+    margin-bottom: 2em;
   }
 
+  .block {
+    flex-basis: 40%;
+    height: 100%;
+  }
+  .block-right {
+    /* margin-left: 0; */
+    flex-basis: 60%;
+    height: 100%;
+  }
 }
 
 
 @media screen and (max-width: 600px) {
   body {
-    margin:0;
 		margin-bottom: 5%;
-    line-height: normal;
+    /* overflow: hidden; */
   }
 
-/* Hide the menu bar and show the dropdown menu */
-	.dropdown, .dropdown a {
-		display: inline;
-	}
-
-	.nav {
-		display: none;
-	}
-
-  .block-1-5, .block-2-5, .block-3-5, .block-4-5 {
-    flex-basis: 100%;
+  .big-text {
+    display: none;
   }
 
-  /* Hide the menu bar and show the dropdown menu */
-  	.dropdown, .dropdown a {
-  		display: inline;
-  	}
-  	.nav {
-  		display: none;
-  	}
+  /* .container {
+    flex-direction: column;
+  } */
 
-  section {
-    margin: 5%;
+  .block {
+    flex-basis: 65%;
+  }
+  .block-right {
+    flex-basis: 35%;
+    margin-left: -5%;
   }
 
-  header {
-    padding: 0em;
-    margin: 0;
+  .block img {
+    filter: brightness(90%);
   }
 
-  .element {
-    margin-left: 0%;
+  h2 {
+    font-size: 0.6rem;
+  }
+  h3 {
+    font-size: 1.3em;
   }
 
-  h4 {
-    margin-top: 0.2em;
-  }
-
-  .block-panel {
+  /* .block-panel {
     flex-direction: column;
   }
   .block-panel img {
-    /* object-fit: cover; */
+    object-fit: cover;
     width: 85%;
+  } */
+
+  .button-view-pg a:hover {
+    transform: translateX(0);
   }
 }
 
 
 @media screen and (max-width: 400px) {
-  body {
-    margin:0;
-		margin-bottom: 5%;
-    line-height: normal;
-  }
-
-  header {
-    padding: 0;
-    margin: 0;
-  }
-
-  section {
-    margin: 5% 2%;
-  }
-
-  .block-panel {
-    flex-direction: column;
-  }
-  .block-panel img {
-    /* object-fit: cover; */
-    width: 100%;
+  .nav-item {
+    position: fixed;
   }
 }
