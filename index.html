@@ -17,68 +17,77 @@
 <body>
 
   <header>
-    <div class="nametag"><h1><a href="home.html">ARELLA NG</a></h1></div>
-      <div class="nav-item"><a href="index.html">STYLE GUIDE</a></div>
-      <div class="nav-item"><a href="about.html">BIO</a></div>
-      <div class="nav-item"><a href="projects.html">PPROJECTS</a></div>
-      <div class="nav-item"><a href="home.html">HOME</a></div>
+      <div class="horizontal-bar">
+        <a href="home.html" class="nametag">ARELLA NG</a>
+        <div class="nav-right">
+          <a href="about.html">ABOUT</a>
+          <a href="projects.html">PPROJECTS</a>
+          <a href="home.html">HOME</a>
+        </div>
+      </div>
   </header>
 
 
   <!-- VISUAL & TEXT ELEMENTS SECTION // -->
-  <section>
-    <h2>Visual & Text Elements</h2>
+  <div class="container" id="style-guide-container">
+    <div class="block-style-guide">
+      <h2>Style Guide</h2>
+      <h4>1. &nbsp; Typography: Karla, sans-serif</h4>
+      <h1>Header one</h1>
+      <h2>Header two</h2>
+      <h3>Header three</h3>
+      <h4>Header four</h4>
+      <h5>Header five</h5>
+      <br>
+      <p>Paragraph:<br>Lorem ipsum dolor sit amet, in graeco oporteat vel, vix tibique dissentias in. Id pro veri cetero incorrupte, pro suas offendit dissentiet ex. Ut eos accumsan facilisis reprehendunt. Vel periculis voluptaria at, quot audire tibique ad cum. Id postea electram principes mel. Democritum definiebas ne vim, cum in eligendi invenire repudiare, ludus graeco maiorum mei ne.</p>
 
-    <!-- Typography // -->
-    <div class="container-1">
-    <section class="block-3-5">
-      <section class="element">
-        <h3>Typography: Karla, sans-serif</h3>
-        <h1>Header 1</h1>
-        <h2>Header 2</h2>
-        <h3>Header 3</h3>
-        <h4>Header 4</h4>
-        <h5>Header 5</h5>
-        <br>
-        <p>Paragraph:<br>Lorem ipsum dolor sit amet, in graeco oporteat vel, vix tibique dissentias in. Id pro veri cetero incorrupte, pro suas offendit dissentiet ex. Ut eos accumsan facilisis reprehendunt. Vel periculis voluptaria at, quot audire tibique ad cum. Id postea electram principes mel. Democritum definiebas ne vim, cum in eligendi invenire repudiare, ludus graeco maiorum mei ne.</p>
+      <h6>CSS selector:</h6>
+      <code>h1, h2, h3, h4, h5, p</code>
 
-        <div class="bg-grey">
-          <h6>CSS selector:</h6>
-          <code>h1, h2, h3, h4, h5, p</code>
+      <h6>Sample code:</h6>
+      <code>&lt;h1&gt;Header one&lt;/h1&gt;</code>
 
-          <h6>Sample code:</h6>
-          <code>&lt;h1&gt;Header 1&lt;/h1&gt;</code>
-        </div>
-      </section>
-    </section>
-
-    <!-- Color palette // -->
-    <section class="block-2-5">
-      <section class="element">
-        <h3>Color Palette:</h3>
-        <a href="starbucks.html"><img src="css/sources/color.png" alt="HTML tutorial" width="100%"></a>
-      </section>
-
-      <section class="element">
-        <h3>Buttons:</h3>
-        <div class="button-view-pg"><a href="#">view project&#187;</a></div><br>
-        <div class="button-bk-to-top"><a href="#">back to top&#187;</a></div><br>
-
-        <div class="bg-grey">
-          <h6>CSS selector:</h6>
-          <code>.button-view-pg, .button-bk-to-top</code>
-
-          <h6>Sample code:</h6>
-          <code>&lt;a href="#" class="button"&gt;view project&lt;/a&gt;</code>
-        </div>
-      </section>
-    </section>
+      <div class="big-text" style="float:right"><a>01</a></div>
     </div>
-  </section>
 
+    <div class="block-style-guide">
+        <h4>2. &nbsp; Buttons:</h4>
+        <div class="button-view-pg"><a href="#">Button&#187;</a></div><br>
+
+        <h6>CSS selector:</h6>
+        <code>.button-view-pg</code>
+
+        <h6>Sample code:</h6>
+        <code>&lt;a href="#" class="button-view-pg"&gt;button&lt;/a&gt;</code>
+
+        <div class="big-text" style="float:right"><a>02</a></div>
+    </div>
+
+    <div class="block-style-guide">
+        <h4>3. &nbsp; In-text Link:</h4>
+        <h5><a id="in-text-link" href="#">This is an In-text link</a></h5></br>
+
+        <h6>CSS selector:</h6>
+        <code>#in-text-link</code>
+
+        <h6>Sample code:</h6>
+        <code>&lt;a href="#" id="in-text-link"&gt;This is an In-text link&lt;/a&gt;</code>
+
+        <div class="big-text" style="float:right"><a>03</a></div>
+    </div>
+
+    <div class="block-style-guide">
+        <!-- <div class="big-text" id="margin-16"><a>UX/UI</a></div> -->
+        <h4>4. &nbsp; Color Palette:</h4>
+        <img src="css/sources/color.png" alt="HTML tutorial" width="60%">
+        <div class="big-text" style="float:right"><a>04</a></div>
+      </div>
+
+
+  <div class="button-back-to-top"><a href="#">UP &#8593;</a></div>
 
   <footer>
-     <h5>&nbsp;&copy;2019 ARELLA NG. ALL RIGHTS RESERVED.</h5>
+    <h5><a href="index.html" id="in-text-link">STYLE GUIDE</a> &nbsp;&copy;2019 ARELLA NG. ALL RIGHTS RESERVED.</h5>
   </footer>
 
 </body>

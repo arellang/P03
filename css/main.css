@@ -10,6 +10,7 @@ header {
 }
 
 body {
+  position: relative;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   width: 100%;
@@ -28,20 +29,37 @@ body {
   color: black;
   text-decoration: none;
 }
-#mail-link:hover {
-  color: white;
-  background-color: #ffd500;
-  padding: 0.5em 0.6em;
-}
 
 #in-text-link {
   color: black;
   text-decoration: underline;
 }
-#in-text-link:hover {
-  text-decoration: none;
+
+#mail-link:hover, #in-text-link:hover {
+  color: black;
+  background-color: lightyellow;
+  padding: 0.5em 0em;
+  font-weight: bold;
 }
 
+/* home-page */
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.column {
+  -ms-flex: 50%;
+  flex: 50%;
+  max-width: 50%;
+  padding: 0 4px;
+}
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
 
 .projects-nav {
   padding-bottom: 30em;
@@ -51,38 +69,25 @@ body {
 code {
   padding: 0.3em;
   display: inline-block;
+  background-color: lightyellow;
 }
 
-/* .container-1 {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-items: flex-start;
-  width: 100%;
-}
-
-.block-1-5 {
-  flex-basis: 30%;
-  margin: 0;
-}
-
-.block-2-5 {
-  padding-top: 1em;
-  flex-basis: 40%;
-  margin: 0;
-}
-
-.block-3-5 {
-  flex-basis: 60%;
-  margin: 0;
-}
-
-.block-4-5 {
-  flex-basis: 70%;
-  margin: 0;
+/* .code-highlight {
+  background-color: lightyellow;
 } */
 
+.block-proj-content {
+  margin: 1% 12%;
+}
+
+.block-proj-img {
+  margin: 0 12%;
+}
+
+.block-center-para {
+    margin: 4em 12%;
+    width: 100%;
+}
 
 /* Styling for the navigation button and submit button */
 div.button-view-pg a{
@@ -100,33 +105,6 @@ div.button-view-pg a{
   color: black;
   border: solid 1.2px black;
 }
-
-div.button a {
-  font-family: "Karla", Arial, sans-serif;
-  display: inline-block;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 0.5rem;
-  text-transform: uppercase;
-  letter-spacing: 0.3em;
-  text-decoration: none;
-  background-color: none;
-  padding: 0.2em 0.8em 0.2em 0.8em;
-  color: black;
-  border-bottom: solid 1.2px black;
-  margin: 3em 0 3em 0;
-}
-
-#button-back-to-top a {
-  position: fixed;
-  bottom: 3em;
-  left: 0;
-  -webkit-transform: rotate(-90deg);
-  -moz-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
-  -o-transform: rotate(-90deg);
-}
-
 .button-view-pg a:hover {
   text-decoration: none;
   font-weight: 500;
@@ -138,15 +116,36 @@ div.button a {
   transform: translateX(12px);
 }
 
-.button-bk-to-top a:hover, .button a:hover {
-  font-weight: 500;
-  text-decoration: none;
-  transition-duration: 0.3s;
-  border: solid 1.2px #ffd500;
-  background-color: #ffd500;
-  color: white;
+div.button-back-to-top a {
+  font-family: "Karla", Arial, sans-serif;
+  display: inline-block;
+  font-size: 1rem;
+  letter-spacing: 0.2em;
+  background-color: none;
+  padding: 0.2em 0.8em 0.2em 0.8em;
+  color: black;
+  border-bottom: solid 1.2px black;
+  margin: 3em 0 2.5em 0;
+  position: fixed;
+  bottom: 0em;
+  right: 0;
+}
+.button-back-to-top a:hover {
+  transition-duration: 0.5s;
+  border: solid 1.2px lightyellow;
+  background-color: lightyellow;
+  color: black;
   transition: 0.5s;
-  /* transform: translateX(12px); */
+}
+
+#style-guide-container {
+  /* margin: 0 12%; */
+  left: 0;
+  flex-direction: column;
+}
+.block-style-guide {
+  width: 70%;
+  margin-bottom: 5em;
 }
 
 a {
@@ -172,8 +171,9 @@ h2 {
   font-family: "Karla", Arial, sans-serif;
   font-size: 0.8rem;
   letter-spacing: 0.5em;
+  margin-top: 1em;
   margin-bottom: 5em;
-  color: black;
+  color: grey;
   font-weight: 400;
 }
 
@@ -181,9 +181,9 @@ h3 {
   font-family: "Karla", Arial, sans-serif;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   /* color: black; */
-  color: rgb(120, 120, 120);
+  color: black;
   margin-top: 0;
   margin-bottom: 0.2em;
 }
@@ -199,9 +199,11 @@ h4 {
 h5 {
   font-family: "Karla", Arial, sans-serif;
   font-weight: 400;
+  font-size: 0.8em;
+  color: black;
   margin-top: 0;
   margin-bottom: 0;
-} /*used for footer*/
+}
 
 h6 {
   font-family: "Karla", Arial, sans-serif;
@@ -213,10 +215,11 @@ h6 {
 
 p {
   margin-top: 0;
-  margin-bottom: 1.5em;
-  line-height: 2em;
+  margin-bottom: 1.4em;
+  line-height: 2.2em;
   font-size: 0.85rem;
   font-weight: 400;
+  /* width: 70%; */
   width: 100%;
 }
 
@@ -226,7 +229,7 @@ p {
 }
 
 .nametag a:hover {
-  color: rgb(100, 100, 100);
+  color: lightyellow;
   transition-duration: 0.5s;
 }
 
@@ -253,21 +256,11 @@ p {
 }
 
 .nav-right {
-  position: fixed;
+  position: absolute;
   right: 8%;
   margin-top: 0;
   z-index: 1000;
 }
-/* #abt-button a{
-  right: 8%;
-}
-#proj-button a{
-  right: 12%;
-}
-#home-button a{
-  right: 18%;
-} */
-
 
 
 /* Styling for the navigation bar in responsive webpages*/
@@ -290,10 +283,14 @@ p {
 	flex-basis: 35%;
 }
 .block-right {
-  /* position: absolute; */
   margin-left: -3%;
 	flex-basis: 65%;
   z-index: 1;
+}
+
+.block-right-normal {
+  flex-basis: 65%;
+  padding-left: 5%;
 }
 
 .big-text {
@@ -301,33 +298,30 @@ p {
 }
 
 .big-text a{
+  position: relative;
   font-size: 16vw;
   color: rgb(240, 240, 240);
+  opacity: 0.7;
   letter-spacing: 0.2em;
   font-weight: bold;
+  z-index: -1;
 }
 
+.block img {
+  filter: brightness(95%);
+}
+
+#margin-16 {
+  margin-left: -16%
+}
 
 footer {
-  font-size: 0.8rem;
-  text-align: center;
-  color: black;
-  margin-bottom:0em;
-  padding-top: 2em;
+  margin-top: 2em;
+  margin-right: 1.5em;
+  margin-bottom: 1em;
+  text-align: right;
+  font-size: 0.8em;
 }
-
-
-/* Media Queries */
-/* @media screen and (max-width: 1300px) {
-  .big-text a{
-    font-size: 12em;
-  }
-}
-@media screen and (max-width: 1100px) {
-  .big-text a{
-    font-size: 10em;
-  }
-} */
 
 
 @media screen and (max-width: 992px) {
@@ -353,10 +347,26 @@ footer {
     flex-basis: 40%;
     height: 100%;
   }
-  .block-right {
-    /* margin-left: 0; */
+  .block-right, .block-right-normal {
     flex-basis: 60%;
     height: 100%;
+  }
+
+  #margin-16 {
+    display: none;
+  }
+
+  .block-proj-content {
+    margin: 0 8%;
+  }
+
+  .block-proj-img {
+    margin: 0 8%;
+  }
+
+  .block-center-para {
+      margin: 2% 8%;
+      width: 100%;
   }
 }
 
@@ -383,8 +393,11 @@ footer {
     margin-left: -5%;
   }
 
-  .block img {
-    filter: brightness(90%);
+  #block-about {
+    flex-basis: 100%;
+  }
+  .block-right-normal {
+    flex-basis: 100%;
   }
 
   h2 {
@@ -394,16 +407,39 @@ footer {
     font-size: 1.3em;
   }
 
-  /* .block-panel {
-    flex-direction: column;
+  p {
+    width: 100%;
   }
-  .block-panel img {
-    object-fit: cover;
-    width: 85%;
-  } */
 
   .button-view-pg a:hover {
     transform: translateX(0);
+  }
+
+  .block-proj-content {
+    margin: 1em 2%;
+  }
+
+  .block-center-para {
+    margin: 2em 2%;
+  }
+
+  .block-proj-img {
+    margin: 0;
+  }
+
+  div.button-back-to-top a {
+    background-color: rgb(100, 100, 100);
+    margin: 3em 0 1.5em 0;
+  }
+
+  #style-guide-container {
+    /* margin: 0 12%; */
+    left: 0;
+    flex-direction: column;
+  }
+  .block-style-guide {
+    width: 96%;
+    margin-bottom: 5em;
   }
 }
 
