@@ -17,14 +17,27 @@
 <body>
   <header>
       <div class="horizontal-bar">
-        <a href="home.html" class="nametag">ARELLA NG</a>
+        <!-- <a href="home.html" class="nametag">ARELLA NG</a> -->
+        <div class="nametag">
+          <a href="home.html">ARELLA NG</a>
+        </div>
         <div class="nav-right">
-          <a href="home.html">HOME</a>
-          <a href="projects.html">PPROJECTS</a>
-          <a href="about.html">ABOUT</a>
+          <!-- <a href="home.html">HOME</a> -->
+          <a href="projects.html">project</a>
+          <a href="about.html">about</a>
+        </div>
+
+        <div class="dropdown" onclick="myFunction()">
+          <img src="css/sources/menu-icon.png" alt="HTML tutorial" width="25px">
         </div>
       </div>
+
   </header>
+
+  <div id="dropdown-content">
+    <div class="nav"><a href="projects.html">project</a></div>
+    <div class="nav"><a href="about.html">about</a></div>
+  </div>
 
   <!-- BIO SECTION // -->
     <div class="container">
@@ -33,11 +46,14 @@
       </div>
       <div class="block-right-normal">
         <div>
-          <div class="big-text" id="margin-16"><a>UX/UI</a></div>
           <h2>Bio</h2>
-          <h4>Hi! I'm Arella Ng</h4>
-          <p>A UX/UI design student in School of Interactive Arts and Technology (SIAT) at Simon Fraser University. I’m passionate about advertisement, brand building, web development, and visual design. With the sensitivity and creativity, I wish to create work that can unite people, design and media. My ultimate goal of being a designer is to create visually compelling experiences that can greet and embrace people from different ages, genders, beliefs, and cultural backgrounds. </p>
-          <p>I am also a lover of photography, hiking, and music!</p>
+          <h4>Hello! I'm Arella.</h4>
+          <p>
+            I’m a UX/UI design student studying in the School of Interactive Arts + Technology (SIAT) at Simon Fraser University. Besides graphical works, I also produce advertisement, websites and some cinematography. Most of all, I love to create compelling visual experiences to communicate a feeling of joy and break boundaries among people.  I believe in the power of creativity and sensitivity to propel our world towards a harmonized community. The new language of multimedia design brings people together from different generations, regions, and stances.
+          </p>
+          <p>
+            I also love photography, hiking, and drumming!
+          </p>
         </div>
       </div>
     </div>
@@ -61,7 +77,7 @@
     </div>
 
   <footer>
-    <h5><a href="index.html" id="in-text-link">STYLE GUIDE</a> &nbsp;&copy;2019 ARELLA NG. ALL RIGHTS RESERVED.</h5>
+    <h6><a href="index.html" id="in-text-link">STYLE GUIDE</a> &nbsp;&copy;2019 ARELLA NG. ALL RIGHTS RESERVED.</h6>
   </footer>
 
 </body>

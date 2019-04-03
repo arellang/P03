@@ -18,76 +18,93 @@
 
   <header>
       <div class="horizontal-bar">
-        <a href="home.html" class="nametag">ARELLA NG</a>
+        <!-- <a href="home.html" class="nametag">ARELLA NG</a> -->
+        <div class="nametag">
+          <a href="home.html">ARELLA NG</a>
+        </div>
         <div class="nav-right">
-          <a href="about.html">ABOUT</a>
-          <a href="projects.html">PPROJECTS</a>
-          <a href="home.html">HOME</a>
+          <!-- <a href="home.html">HOME</a> -->
+          <a href="projects.html">project</a>
+          <a href="about.html">about</a>
+        </div>
+
+        <div class="dropdown" onclick="myFunction()">
+          <img src="css/sources/menu-icon.png" alt="HTML tutorial" width="25px">
         </div>
       </div>
+
   </header>
+
+  <div id="dropdown-content">
+    <div class="nav"><a href="projects.html">project</a></div>
+    <div class="nav"><a href="about.html">about</a></div>
+  </div>
 
 
   <!-- VISUAL & TEXT ELEMENTS SECTION // -->
-  <div class="container" id="style-guide-container">
-    <div class="block-style-guide">
+  <div class="container">
+    <div class="block-center-para">
       <h2>Style Guide</h2>
       <h4>1. &nbsp; Typography: Karla, sans-serif</h4>
       <h1>Header one</h1>
-      <h2>Header two</h2>
+      <h2 style="margin-bottom: 0">Header two</h2>
       <h3>Header three</h3>
       <h4>Header four</h4>
       <h5>Header five</h5>
-      <br>
+      </br>
       <p>Paragraph:<br>Lorem ipsum dolor sit amet, in graeco oporteat vel, vix tibique dissentias in. Id pro veri cetero incorrupte, pro suas offendit dissentiet ex. Ut eos accumsan facilisis reprehendunt. Vel periculis voluptaria at, quot audire tibique ad cum. Id postea electram principes mel. Democritum definiebas ne vim, cum in eligendi invenire repudiare, ludus graeco maiorum mei ne.</p>
 
-      <h6>CSS selector:</h6>
-      <code>h1, h2, h3, h4, h5, p</code>
+      <h5>CSS selector:</h5>
+      <code>h1, h2, h3, h3, h5, p</code>
 
-      <h6>Sample code:</h6>
+      <h5>Sample code:</h5>
       <code>&lt;h1&gt;Header one&lt;/h1&gt;</code>
+      </div>
 
-      <div class="big-text" style="float:right"><a>01</a></div>
-    </div>
-
-    <div class="block-style-guide">
+    <div class="block-center-para">
         <h4>2. &nbsp; Buttons:</h4>
-        <div class="button-view-pg"><a href="#">Button&#187;</a></div><br>
+        <div class="button-view-pg"><a href="#">this is a Button&#187;</a></div><br>
 
-        <h6>CSS selector:</h6>
+        <h5>CSS selector:</h5>
         <code>.button-view-pg</code>
 
-        <h6>Sample code:</h6>
+        <h5>Sample code:</h5>
         <code>&lt;a href="#" class="button-view-pg"&gt;button&lt;/a&gt;</code>
-
-        <div class="big-text" style="float:right"><a>02</a></div>
     </div>
 
-    <div class="block-style-guide">
+    <div class="block-center-para">
         <h4>3. &nbsp; In-text Link:</h4>
         <h5><a id="in-text-link" href="#">This is an In-text link</a></h5></br>
 
-        <h6>CSS selector:</h6>
+        <h5>CSS selector:</h5>
         <code>#in-text-link</code>
 
-        <h6>Sample code:</h6>
+        <h5>Sample code:</h5>
         <code>&lt;a href="#" id="in-text-link"&gt;This is an In-text link&lt;/a&gt;</code>
-
-        <div class="big-text" style="float:right"><a>03</a></div>
     </div>
 
-    <div class="block-style-guide">
-        <!-- <div class="big-text" id="margin-16"><a>UX/UI</a></div> -->
+    <div class="block-center-para">
         <h4>4. &nbsp; Color Palette:</h4>
-        <img src="css/sources/color.png" alt="HTML tutorial" width="60%">
-        <div class="big-text" style="float:right"><a>04</a></div>
-      </div>
+        <img src="css/sources/color.png" alt="HTML tutorial" width="100%">
+    </div>
 
+    <div class="block-center-para">
+      <h4>5. &nbsp; Main navigation:</h4>
+      <div id="style-guide-nav">
+        <a href="projects.html">project</a>
+        <a href="about.html">about</a>
+      </div></br>
 
-  <div class="button-back-to-top"><a href="#">UP &#8593;</a></div>
+      <h5>CSS selector:</h5>
+      <code>.nav-right</code>
+
+      <h5>Sample code:</h5>
+      <code>&lt;div class="nav-right"&gt;&lt;a href="about.html"&gt;About&lt;/a&gt;&lt;/div&gt;</code>
+    </div>
+</div>
 
   <footer>
-    <h5><a href="index.html" id="in-text-link">STYLE GUIDE</a> &nbsp;&copy;2019 ARELLA NG. ALL RIGHTS RESERVED.</h5>
+    <h6><a href="index.html" id="in-text-link">STYLE GUIDE</a> &nbsp;&copy;2019 ARELLA NG. ALL RIGHTS RESERVED.</h6>
   </footer>
 
 </body>

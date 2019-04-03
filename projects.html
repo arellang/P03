@@ -5,28 +5,40 @@
 
   <meta charset="utf-8">
   <title>P03 - Style Guide Template</title>
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,700|Source+Code+Pro:200" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/normalize.css">
+  <script src="js/style.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
 
-<header>
-    <div class="horizontal-bar">
-      <a href="home.html" class="nametag">ARELLA NG</a>
-      <div class="nav-right">
-        <a href="home.html">HOME</a>
-        <a href="projects.html">PPROJECTS</a>
-        <a href="about.html">ABOUT</a>
-      </div>
-    </div>
-</header>
+  <header>
+      <div class="horizontal-bar">
+        <!-- <a href="home.html" class="nametag">ARELLA NG</a> -->
+        <div class="nametag">
+          <a href="home.html">ARELLA NG</a>
+        </div>
+        <div class="nav-right">
+          <!-- <a href="home.html">HOME</a> -->
+          <a href="projects.html">project</a>
+          <a href="about.html">about</a>
+        </div>
 
+        <div class="dropdown" onclick="myFunction()">
+          <img src="css/sources/menu-icon.png" alt="HTML tutorial" width="25px">
+        </div>
+      </div>
+
+  </header>
+  
+  <div id="dropdown-content">
+    <div class="nav"><a href="projects.html">project</a></div>
+    <div class="nav"><a href="about.html">about</a></div>
+  </div>
 
 <section>
     <div class="container">
@@ -36,10 +48,10 @@
       </div>
       <div class="block-right">
         <h2>web development</h2>
-        <h3>Starbucks Reserve&#8482;</h3>
-        <h6>Brand identity.&nbsp; Art direction.&nbsp; Responsiveness.&nbsp; 2019.</h6><br>
+        <h1>Starbucks Reserve&#8482;</h1>
+        <h5>Brand identity.&nbsp; Art direction.&nbsp; 2019.</h5><br>
         <div class="button-view-pg"><a href="starbucks.html">view project&#187;</a></div>
-        <div class="big-text"><a>01/05</a></div>
+        <div class="big-text"><a>01</a></div>
 
       </div>
 
@@ -49,10 +61,10 @@
       </div>
       <div class="block-right">
         <h2>graphic design</h2>
-        <h3>Magazine Spreads</h3>
-        <h6>Print design.&nbsp; Layout.&nbsp; Typography.&nbsp; 2017.</h6><br>
+        <h1>Magazine Spreads</h1>
+        <h5>Print design.&nbsp; Layout.&nbsp; Typography.&nbsp; 2017.</h5><br>
         <div class="button-view-pg"><a href="magazine.html">view project&#187;</a></div>
-        <div class="big-text"><a>02/05</a></div>
+        <div class="big-text"><a>02</a></div>
       </div>
 
 
@@ -61,10 +73,10 @@
       </div>
       <div class="block-right">
         <h2>cinematography</h2>
-        <h3>"The rhythm of life"</h3>
-        <h6>Narrative.&nbsp; Short commerical.&nbsp; Colour grading.&nbsp; Product.&nbsp; 2018.</h6><br>
-        <div class="button-view-pg"><a href="starbucks.html">view project&#187;</a></div>
-        <div class="big-text"><a>03/05</a></div>
+        <h1>"The Rhythm of Life"</h1>
+        <h5>Narrative.&nbsp; Short commerical.&nbsp; Colour grading.&nbsp; Product.&nbsp; 2018.</h5><br>
+        <div class="button-view-pg"><a href="coming-soon.html">view project&#187;</a></div>
+        <div class="big-text"><a>03</a></div>
       </div>
 
       <div class="block">
@@ -72,10 +84,10 @@
       </div>
       <div class="block-right">
         <h2>installation art</h2>
-        <h3>coherence</h3>
-        <h6>Social interaction.&nbsp; Sound installation art.&nbsp; Conference showcase.&nbsp; 2018.</h6><br>
-        <div class="button-view-pg"><a href="starbucks.html">view project&#187;</a></div>
-        <div class="big-text"><a>04/05</a></div>
+        <h1>Coherence</h1>
+        <h5>Social interaction.&nbsp; Sound installation art.&nbsp; Conference showcase.&nbsp; 2018.</h5><br>
+        <div class="button-view-pg"><a href="coming-soon.html">view project&#187;</a></div>
+        <div class="big-text"><a>04</a></div>
       </div>
 
       <div class="block">
@@ -83,18 +95,17 @@
       </div>
       <div class="block-right">
         <h2>cinematography</h2>
-        <h3>identical</h3>
-        <h6>Narrative/Triller.&nbsp; Art direction.&nbsp; Visual effects.&nbsp; 2017.</h6><br>
-        <div class="button-view-pg"><a href="starbucks.html">view project&#187;</a></div>
-        <div class="big-text"><a>05/05</a></div>
+        <h1>"Identical"</h1>
+        <h5>Narrative/Triller.&nbsp; Art direction.&nbsp; Visual effects.&nbsp; 2017.</h5><br>
+        <div class="button-view-pg"><a href="coming-soon.html">view project&#187;</a></div>
+        <div class="big-text"><a>05</a></div>
       </div>
 
     </div>
   </section>
 
   <footer>
-    <h5><a href="index.html" id="in-text-link">STYLE GUIDE</a> &nbsp;&copy;2019 ARELLA NG. ALL RIGHTS RESERVED.</h5>
+    <h6><a href="index.html" id="in-text-link">STYLE GUIDE</a> &nbsp;&copy;2019 ARELLA NG. ALL RIGHTS RESERVED.</h6>
   </footer>
-
 </body>
 </html>
